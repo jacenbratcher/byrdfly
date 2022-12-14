@@ -1,0 +1,136 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    background-color: BLA;
+  }
+  body{
+    font-family: montserrat;
+    display: fle;
+  }
+  nav{
+    background: #4c4b4b;
+    height: 80px;
+    width: 100%;
+  }
+  label.logo{
+    color: rgb(207, 205, 205);
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+  }
+  nav ul{
+    float: right;
+    margin-right: 20px;
+  }
+  nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+  }
+  nav ul li a{
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+  }
+  a.active,a:hover{
+    background: #000000;
+    transition: .5s;
+  }
+  .checkbtn{
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check{
+    display: none;
+  }
+  @media (max-width: 952px){
+    label.logo{
+      font-size: 30px;
+      padding-left: 50px;
+    }
+    nav ul li a{
+      font-size: 16px;
+    }
+  }
+  @media (max-width: 858px){
+    .checkbtn{
+      display: block;
+    }
+    ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #000000;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+    }
+    nav ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    }
+    nav ul li a{
+      font-size: 20px;
+    }
+    a:hover,a.active{
+      background: none;
+      color: #b9b1b1;
+    }
+    #check:checked ~ ul{
+      left: 0;
+    }
+  }
+  section{
+    background-color: #000000;
+    background-size: cover;
+    height: calc(100vh - 80px);
+  }
+  .checkbtn{
+    color:rgb(255, 255, 255) ;
+  }
+  .center-text{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 140px;
+    background: black;
+    color: aliceblue;
+    font-size: 30px;
+    text-align: center;
+  }
+  .shop-center-text {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+    background: black;
+    color: aliceblue;
+    font-size: 30px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    }
+    @media (max-width: 858px){
+        .center-text{
+            display: none;
+        }
+    }
+    @media (max-width: 858px){
+        .shop-center-text{
+            display: none;
+        }
+    }
